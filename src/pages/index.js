@@ -1,19 +1,29 @@
-import React from "react"
-import Container from "../components/container"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import React from 'react';
+import { Layout, SEO } from '../components';
+import { Row, Col } from 'antd';
+import { Home } from '../components/Image';
+
+import styles from './index.module.less';
 
 const IndexPage = () => (
-  <Container>
+  <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site with ant design! (antd)</p>
-    <p>You can find all Ant Design components <a href="https://ant.design/components/button/">here</a></p>
-    <p>Scroll down if you haven't already!</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className={styles.container}>
+      <Row gutter={64} style={{ height: '100%' }}>
+        <Col span={12}>
+          <Home className={styles.image} />
+        </Col>
+        <Col span={12}>
+          <Row align="middle" style={{ height: '100%' }}>
+            <Col className={styles.title} span={24}>
+              We <span className={styles.highlight}>care</span> about{' '}
+              <span className={styles.details}>animals</span>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </div>
-  </Container>
-)
+  </Layout>
+);
 
-export default IndexPage
+export default IndexPage;

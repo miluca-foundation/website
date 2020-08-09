@@ -1,8 +1,8 @@
-const lessToJson = require('less-to-json'); 
+const lessToJson = require('less-to-json');
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Ant Design Starter",
+    title: 'Gatsby Ant Design Starter',
     description: `Kick off your next, great Gatsby project with this extra awesome ant design starter!`,
     author: `@gatsbyjs + @alienCY`,
   },
@@ -11,17 +11,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-antd',
       options: {
-        style: true
-      }
+        style: true,
+      },
     },
     {
-      resolve: "gatsby-plugin-less",
+      resolve: 'gatsby-plugin-less',
       options: {
         lessOptions: {
           javascriptEnabled: true,
           modifyVars: lessToJson('src/theme/vars.less'),
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -44,8 +44,21 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/locales`,
+        // supported language
+        languages: [`en`, `es`],
+        // language file path
+        defaultLanguage: `es`,
+        // option to redirect to `/ko` when connecting `/`
+        redirect: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     //`gatsby-plugin-offline`,
   ],
-}
+};
