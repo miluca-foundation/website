@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/75f0e056-ce9d-4841-b4f4-cb671fef6e28/deploy-status)](https://app.netlify.com/sites/distracted-cori-d4c98c/deploys)
+
 # Gatsby starter with Ant Design
 
 It's a clone of the default gatsby starter but utilizing ant design (antd) components.
