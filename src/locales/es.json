@@ -1,3 +1,21 @@
 {
-  "title": "Fundación Miluca"
+  "title": "Fundación Miluca",
+  "home.description": "Nos {care} los {animals}",
+  "care": "preocupan",
+  "animals": "animales",
+  "home.i.want.to.know.more": "¡Quiero saber más!",
+
+  "contact.title": "Contáctanos",
+  "contact.description": "Nuestro equipo estára más que feliz de responder todas tus preguntas. Por favor, llena la forma y nos pondremos en contacto muy pronto",
+  "contact.send": "Enviar",
+  "contact.labels.name": "Nombre completo",
+  "contact.labels.email": "Correo electrónico",
+  "contact.labels.phone.number": "Número de teléfono",
+  "contact.labels.message": "Mensaje",
+  "contact.placeholders.name": "Escribe tu nombre",
+  "contact.placeholders.email": "Escribe tu dirección de correo",
+  "contact.placeholders.phone.number": "Escribe tu número de teléfono",
+  "contact.placeholders.message": "¿Algún mensaje que desees agregar?",
+  "contact.validations.name.required": "Tu nombre es requrido",
+  "contact.validations.email.required": "Tu dirección de correo es requerida"
 }

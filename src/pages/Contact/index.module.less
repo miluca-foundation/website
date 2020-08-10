@@ -1,0 +1,27 @@
+.contact {
+  padding: @padding-lg * 4 @padding-lg * 8;
+  background-color: white;
+  margin: 0;
+  position: relative;
+  overflow-y: hidden;
+  :global {
+    .ant-input-prefix {
+      color: @secondary-color;
+    }
+    .ant-form-item-label > label.ant-form-item-required::before {
+      display: none;
+    }
+  }
+
+  &:before {
+    content: "";
+    height: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: @secondary-color;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+  }
+}

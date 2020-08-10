@@ -1,3 +1,21 @@
 {
-  "title": "Miluca Foundation"
+  "title": "Miluca Foundation",
+  "home.description": "We {care} for {animals}",
+  "care": "care",
+  "animals": "animals",
+  "home.i.want.to.know.more": "I want to know more!",
+
+  "contact.title": "Contact us",
+  "contact.description": "Our team is happy to answer all your questions. Fill out the form, and we will be in touch very soon",
+  "contact.send": "Send",
+  "contact.labels.name": "Full name",
+  "contact.labels.email": "Email address",
+  "contact.labels.phone.number": "Phone number",
+  "contact.labels.message": "Message",
+  "contact.placeholders.name": "Enter your name",
+  "contact.placeholders.email": "Enter your email address",
+  "contact.placeholders.phone.number": "Enter your phone number",
+  "contact.placeholders.message": "Anything you want to add?",
+  "contact.validations.name.required": "Your name is required",
+  "contact.validations.email.required": "Your email address is required"
 }

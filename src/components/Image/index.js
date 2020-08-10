@@ -1,6 +1,7 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import Home from './home';
+import Logo from './logo';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -18,4 +19,4 @@ const Image = ({ className, data = { image: { childImageSharp: {} } } }) => (
 );
 
 export default Image;
-export { Home };
+export { Home, Image, Logo };

@@ -1,29 +1,15 @@
 import React from 'react';
-import { Layout, SEO } from '../components';
-import { Row, Col } from 'antd';
-import { Home } from '../components/Image';
 
-import styles from './index.module.less';
+import { Layout } from '../components';
+import Home from './Home';
+import Contact from './Contact';
 
-const IndexPage = () => (
+const Index = () => (
   <Layout>
-    <SEO title="Home" />
-    <div className={styles.container}>
-      <Row gutter={64} style={{ height: '100%' }}>
-        <Col span={12}>
-          <Home className={styles.image} />
-        </Col>
-        <Col span={12}>
-          <Row align="middle" style={{ height: '100%' }}>
-            <Col className={styles.title} span={24}>
-              We <span className={styles.highlight}>care</span> about{' '}
-              <span className={styles.details}>animals</span>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </div>
+    {/* <SEO title="Home" /> */}
+    <Home />
+    <Contact />
   </Layout>
 );
 
-export default IndexPage;
+export default Index;
