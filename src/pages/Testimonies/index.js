@@ -2,9 +2,9 @@ import React from 'react';
 import { Row, Carousel } from 'antd';
 import { Floor, SEO } from 'components';
 
-export default () => {
+export default () => (
   <Floor id="testimonies">
-    <SEO title="Testimonies"/>
+    <SEO title="Testimonies" />
     Testimonies
   </Floor>
-}
+);
