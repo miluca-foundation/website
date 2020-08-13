@@ -1,5 +1,10 @@
 {
   "title": "Fundación Miluca",
+
+  "menu.story": "Nuestra historia",
+  "menu.testimonies": "Testimonios",
+  "menu.contact": "Contacto",
+
   "home.description": "Nos {care} los {animals}",
   "care": "preocupan",
   "animals": "animales",
@@ -17,5 +22,8 @@
   "contact.placeholders.phone.number": "Escribe tu número de teléfono",
   "contact.placeholders.message": "¿Algún mensaje que desees agregar?",
   "contact.validations.name.required": "Tu nombre es requrido",
-  "contact.validations.email.required": "Tu dirección de correo es requerida"
+  "contact.validations.email.required": "Tu dirección de correo es requerida",
+
+  "story.title": "Nuestra Historia",
+  "story.description": "Si recoges un perro hambriento de la calle y lo haces próspero, no te morderá; esa es la principal diferencia entre un perro y un hombre"
 }

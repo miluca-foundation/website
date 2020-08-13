@@ -5,7 +5,7 @@ import Image from './index';
 export default ({ className }) => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "home.jpg" }) {
+      image: file(relativePath: { eq: "home_dog.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid

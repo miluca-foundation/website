@@ -10,6 +10,12 @@ import {
 } from 'gatsby-plugin-intl';
 import { Logo } from 'components/Image';
 import { GlobalOutlined } from '@ant-design/icons';
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import {
+  HeartOutlined,
+  CommentOutlined,
+  FormOutlined,
+} from '@ant-design/icons';
 
 import styles from './index.module.less';
 
@@ -17,8 +23,27 @@ const { Header, Footer, Content } = AntLayout;
 const { SubMenu } = Menu;
 const { Item } = Menu;
 
-const handleLanguageMenuClick = ({ key }) => {
-  changeLocale(key);
+const keys = [
+  {
+    id: 'story',
+    icon: <HeartOutlined />,
+  },
+  {
+    id: 'testimonies',
+    icon: <CommentOutlined />,
+  },
+  {
+    id: 'contact',
+    icon: <FormOutlined />,
+  },
+];
+
+const handleMenuClick = ({ key }) => {
+  if (key === 'en' || key === 'es') {
+    changeLocale(key);
+  } else {
+    scrollTo(`#${key}`);
+  }
 };
 
 const Layout = ({ defKey, children, intl }) => {
@@ -35,7 +60,7 @@ const Layout = ({ defKey, children, intl }) => {
   return (
     <AntLayout className={styles.layout}>
       <Header>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div className={styles.header}>
           <h1 style={{ margin: 'margin 0', float: 'left' }}>
             <Link to="/">
               <Row gutter={16} align="middle">
@@ -52,8 +77,13 @@ const Layout = ({ defKey, children, intl }) => {
             style={{ float: 'right' }}
             mode="horizontal"
             defaultSelectedKeys={defKey}
-            onClick={handleLanguageMenuClick}
+            onClick={handleMenuClick}
           >
+            {keys.map(({ id, icon }) => (
+              <Item key={id} icon={icon}>
+                <FormattedMessage id={`menu.${id}`} />
+              </Item>
+            ))}
             <SubMenu icon={<GlobalOutlined />}>
               <Item key="en">English</Item>
               <Item key="es">Español</Item>

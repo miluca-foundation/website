@@ -1,5 +1,10 @@
 {
   "title": "Miluca Foundation",
+
+  "menu.story": "Our Story",
+  "menu.testimonies": "Testimonies",
+  "menu.contact": "Contact",
+
   "home.description": "We {care} for {animals}",
   "care": "care",
   "animals": "animals",
@@ -17,5 +22,8 @@
   "contact.placeholders.phone.number": "Enter your phone number",
   "contact.placeholders.message": "Anything you want to add?",
   "contact.validations.name.required": "Your name is required",
-  "contact.validations.email.required": "Your email address is required"
+  "contact.validations.email.required": "Your email address is required",
+
+  "story.title": "Our Story",
+  "story.description": "If you pick up a street dog and make him prosper, it won't bite you; that's the main difference between a dog and a man."
 }

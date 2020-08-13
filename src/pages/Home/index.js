@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { SEO } from 'components';
+import { SEO, Floor } from 'components';
 import { Row, Col, Button } from 'antd';
 import { Home } from 'components/Image';
 import { FormattedMessage, useIntl } from 'gatsby-plugin-intl';
@@ -13,11 +13,8 @@ export default () => {
   return (
     <Fragment>
       <SEO title="Home" />
-      <div className={styles.container}>
+      <Floor id="home">
         <Row gutter={32} style={{ height: '100%', width: '100%' }}>
-          <Col span={12}>
-            <Home className={styles.image} />
-          </Col>
           <Col span={12}>
             <Row align="middle" style={{ height: '100%' }}>
               <Col className={styles.title} span={24}>
@@ -52,8 +49,11 @@ export default () => {
               </Col>
             </Row>
           </Col>
+          <Col span={12} className={styles.hexagons}>
+            <Home className={styles.image} />
+          </Col>
         </Row>
-      </div>
+      </Floor>
     </Fragment>
   );
 };

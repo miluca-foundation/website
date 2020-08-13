@@ -1,23 +1,22 @@
-.container {
-  width: 100%;
-  height: 100vh;
-  // background: url('../images/home.jpg');
-  // background-position: center;
-  // object-fit: cover;
-  background-color: white;
-  .image {
-    height: 100%;
+.image {
+  height: 100%;
+}
+.title {
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  .details {
+    color: @primary-color;
+    padding: 0 @padding-sm;
   }
-  .title {
-    font-size: 80px;
-    font-weight: bold;
-    text-transform: uppercase;
-    .details {
-      color: @primary-color;
-      padding: 0 @padding-sm;
-    }
-    .highlight {
-      color: @secondary-color;
-    }
+  .highlight {
+    color: @secondary-color;
   }
+}
+
+.hexagons {
+  background-image: url('../../images/hexagons.svg');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }

@@ -1,0 +1,58 @@
+.header {
+  .left {
+    color: lighten(@secondary-color, 10%);
+    font-size: 32px;
+    transform: rotate(-20deg);
+  }
+  .center {
+    color: @secondary-color;
+    font-size: 64px;
+  }
+  .right {
+    .left();
+    transform: rotate(20deg);
+  }
+  .heart {
+    color: white;
+    border-radius: 50%;
+    background-color: @secondary-color;
+    position: relative;
+    font-size: 48px;
+    padding: 32px;
+    text-align: center;
+    z-index: 2;
+    line-height: 0;
+    &::before {
+      position: absolute;
+      background-color: lighten(@secondary-color, 10%);
+      top: 32px;
+      width: 48px;
+      height: 48px;
+      content: "";
+      left: -66%;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      background-color: lighten(@secondary-color, 10%);
+      top: 32px;
+      width: 48px;
+      height: 48px;
+      content: "";
+      right: -66%;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+}
+.title {
+  font-size: 60px;
+  display: block;
+  line-height: normal;
+}
+.subtitle {
+  color: @text-color-secondary !important;
+  padding: @padding-sm 0;
+  font-size: 18px;
+}
